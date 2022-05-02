@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block content %} 
+{{ super() }} 
+
+    <!-- {% for cat, msg in get_flashed_messages(True) %}
+        <div class="{{ cat }}">{{ msg }}</div>
+    {% endfor %}  -->
+
+    <form action="" method="post">  
+        <p><label for="">Name: </label><input type="text" name="name" value="" required></p>
+        <p><label for="">Age: </label><input type="text" name="old" value="" required></p>
+        <p><label for="">City: </label><input type="text" name="city" value="" required></p>
+        <p><label for="">Email: </label><input type="text" name="email" value="" required></p>
+        <p><label for="">Password: </label><input type="password" name="psw" value="" required></p>
+        <p><label for="">Repeat password: </label><input type="password" name="psw2" value="" required></p>
+        <p><input type="submit" value="Registration"></p>
+    </form>
+
+{% endblock %} 
